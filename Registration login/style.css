@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost";
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container{
+    max-width: 700px;
+    background: #fff;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+}
+.container .title::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0 ;
+    height: 3px;
+    width: 20px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details .input{
+    margin: 20px 0 12px 0;
+    width: calc(100% /2 - 20px);
+}
+.user-details .input .details{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+form .button input:hover{
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+@media(max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input{
+        margin: 15px;
+        width: 100%;
+}
+}
